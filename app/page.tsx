@@ -9,7 +9,7 @@ export default function Home() {
 
         {/* TOP INFO BAR */}
         <div className="bg-yellow-500 text-black text-sm py-2 px-4 flex flex-col md:flex-row justify-between items-center">
-          <div>📍 Unit 5, Pipewell Road, Desborough, NN14 2SW</div>
+          <div>📍 5 Pipewell Industrial Estate, Kettering, NN14 2SW</div>
 
           <div className="flex gap-4 mt-1 md:mt-0 flex-wrap justify-center">
             <span>Mon 9–5</span>
@@ -101,7 +101,10 @@ export default function Home() {
               Showroom
             </a>
 
-            <a href="mailto:info@newleafwindows.com" className="text-white hover:text-yellow-400">
+            <a
+              href="mailto:info@newleafwindows.com"
+              className="text-white hover:text-yellow-400"
+            >
               Contact
             </a>
           </div>
@@ -210,6 +213,39 @@ export default function Home() {
                 className="h-20 object-contain"
               />
             </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* MAP SECTION */}
+      <section className="bg-neutral-950 px-6 py-16 border-t border-yellow-500/20">
+        <div className="max-w-5xl mx-auto text-center">
+
+          <h2 className="text-3xl md:text-4xl font-bold text-yellow-500 mb-4">
+            Find Our Showroom
+          </h2>
+
+          <p className="text-neutral-300 text-lg mb-8">
+            5 Pipewell Industrial Estate, Kettering, NN14 2SW
+          </p>
+
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=5+Pipewell+Industrial+Estate,+Kettering,+NN14+2SW"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-8 py-4 rounded-2xl transition shadow-2xl text-lg mb-8"
+          >
+            <span className="text-2xl">📍</span>
+            Click For Directions To Our Showroom
+          </a>
+
+          <div className="rounded-2xl overflow-hidden border border-yellow-500/30 shadow-2xl">
+            <img
+              src="/map.png"
+              alt="Map to Newleaf Windows showroom"
+              className="w-full h-auto"
+            />
           </div>
 
         </div>
