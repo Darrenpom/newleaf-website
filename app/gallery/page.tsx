@@ -1,6 +1,13 @@
+import Image from "next/image";
+
 export default function GalleryPage() {
+  const photos = Array.from(
+    { length: 20 },
+    (_, i) => `/gallery/${i + 1}.jpg`
+  );
+
   return (
-    <main className="min-h-screen bg-black text-white px-6 py-12">
+    <main className="min-h-screen bg-neutral-900 text-white p-6">
 
       <a
         href="/"
@@ -9,46 +16,27 @@ export default function GalleryPage() {
         ← Back to Home
       </a>
 
-      <h1 className="text-4xl font-bold text-center mb-4">
-        Our Recent Installations
+      <h1 className="text-5xl font-extrabold text-center mb-12 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent tracking-wide drop-shadow-lg">
+        Our Recent Work
       </h1>
 
-      <p className="text-center text-neutral-400 mb-10">
-        Before and after transformations by Newleaf Windows & Doors
-      </p>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-        {/* BEFORE */}
-        <div className="rounded-xl overflow-hidden border border-white/10 bg-white/5">
-
-          <img
-            src="/before-after/before1.jpg"
-            className="w-full h-auto"
-            alt="Before"
-          />
-
-          <p className="p-4 text-center text-sm text-neutral-400">
-            Before
-          </p>
-
-        </div>
-
-        {/* AFTER */}
-        <div className="rounded-xl overflow-hidden border border-white/10 bg-white/5">
-
-          <img
-            src="/before-after/after1.jpg"
-            className="w-full h-auto"
-            alt="After"
-          />
-
-          <p className="p-4 text-center text-sm text-neutral-400">
-            After
-          </p>
-
-        </div>
-
+      <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+        {photos.map((photo, index) => (
+          <div
+            key={index}
+            className="overflow-hidden rounded-2xl shadow-lg break-inside-avoid"
+          >
+            <a href={photo} target="_blank">
+              <Image
+                src={photo}
+                alt={`Gallery Image ${index + 1}`}
+                width={800}
+                height={600}
+                className="w-full h-auto hover:scale-105 transition duration-300 cursor-pointer"
+              />
+            </a>
+          </div>
+        ))}
       </div>
 
     </main>
