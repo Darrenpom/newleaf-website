@@ -23,7 +23,7 @@ export default function Home() {
         </div>
 
         {/* MAIN NAV BAR */}
-        <div className="bg-black/90 backdrop-blur-md border-b border-yellow-500/20 px-4 md:px-6 py-4 flex justify-between items-center">
+        <div className="relative bg-black/90 backdrop-blur-md border-b border-yellow-500/20 px-4 md:px-6 py-4 flex justify-between items-center">
 
           <a href="/" className="text-base md:text-xl font-bold tracking-wide">
             Newleaf Windows & Doors
@@ -82,6 +82,30 @@ export default function Home() {
             Call Now
           </a>
 
+          {/* MOBILE MENU LINKS */}
+          <div className="md:hidden absolute top-full left-0 w-full bg-black border-t border-yellow-500/20 px-4 py-3 flex flex-wrap justify-center gap-4 text-sm">
+            <a href="/gallery" className="text-white hover:text-yellow-400">
+              Gallery
+            </a>
+
+            <a
+              href="https://endurancedoors.co.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-yellow-400"
+            >
+              Endurance
+            </a>
+
+            <a href="/showroom" className="text-white hover:text-yellow-400">
+              Showroom
+            </a>
+
+            <a href="mailto:info@newleafwindows.com" className="text-white hover:text-yellow-400">
+              Contact
+            </a>
+          </div>
+
         </div>
       </header>
 
@@ -97,7 +121,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/45"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black"></div>
 
-        <div className="relative z-20 min-h-[calc(100vh-105px)] flex flex-col justify-center items-center text-center px-6 py-12">
+        <div className="relative z-20 min-h-[calc(100vh-105px)] flex flex-col justify-center items-center text-center px-6 py-20 md:py-12">
 
           <div className="-mb-8 flex justify-center">
             <Image
