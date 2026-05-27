@@ -7,31 +7,58 @@ export default function Home() {
 
   async function handleQuoteSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    const form = event.currentTarget;
 
-    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
+    const accessKey = "2fa29ea3-1d5a-4773-b5b9-e91c68ea9a5d";
 
     if (!accessKey || accessKey === "PASTE_YOUR_WEB3FORMS_KEY_HERE") {
       setQuoteStatus("Form key missing. Add your Web3Forms access key first.");
       return;
     }
 
-    const formData = new FormData(event.currentTarget);
+    const formData = new FormData(form);
+    const firstName = formData.get("firstName")?.toString() || "";
+    const lastName = formData.get("lastName")?.toString() || "";
+    const product = formData.get("product")?.toString() || "";
+    const phone = formData.get("phone")?.toString() || "";
+    const email = formData.get("email")?.toString() || "";
+    const house = formData.get("house")?.toString() || "";
+    const postcode = formData.get("postcode")?.toString() || "";
+
     formData.append("access_key", accessKey);
     formData.append("subject", "New quote enquiry from Newleaf website");
     formData.append("from_name", "Newleaf Website");
+    formData.append("name", `${firstName} ${lastName}`.trim());
+    formData.append(
+      "message",
+      `Product: ${product}
+Name: ${firstName} ${lastName}
+Phone: ${phone}
+Email: ${email}
+Address: ${house}, ${postcode}`
+    );
 
     setQuoteStatus("Sending...");
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      const result = await response.json();
 
-    if (response.ok) {
-      event.currentTarget.reset();
-      setQuoteStatus("Thanks, your enquiry has been sent.");
-    } else {
-      setQuoteStatus("Sorry, something went wrong. Please call or email us.");
+      if (response.ok && result.success) {
+        form.reset();
+        setQuoteStatus("Thanks, your enquiry has been sent.");
+      } else {
+        setQuoteStatus(result.message || "Sorry, something went wrong. Please call or email us.");
+      }
+    } catch (error) {
+      setQuoteStatus(
+        error instanceof Error
+          ? error.message
+          : "Sorry, something went wrong. Please call or email us."
+      );
     }
   }
 
