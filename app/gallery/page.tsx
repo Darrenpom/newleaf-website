@@ -5,10 +5,23 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function GalleryPage() {
+  const hiddenPhotos = [
+    9,
+    24,
+    31,
+    43,
+    50,
+    53,
+    72,
+    73,
+    96,
+    101,
+  ].map((number) => `/gallery/${number}.jpg`);
+
   const photos = Array.from(
     { length: 108 },
     (_, i) => `/gallery/${i + 1}.jpg`
-  ).filter((photo) => !["/gallery/50.jpg", "/gallery/53.jpg"].includes(photo));
+  ).filter((photo) => !hiddenPhotos.includes(photo));
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
   const activePhoto = activeIndex === null ? null : photos[activeIndex];
