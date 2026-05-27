@@ -1,21 +1,33 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function ShowroomPage() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-white text-black">
 
-      <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-6">
+      <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-6 py-16">
 
-        <div className="absolute inset-0 bg-black"></div>
+        <Image
+          src="/showroom-fresh-bg.png"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-white/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-white/10 to-white/60"></div>
 
-        <div className="relative z-10 text-center max-w-4xl mb-10">
-          <h1 className="text-5xl md:text-7xl font-bold text-yellow-500 mb-6 drop-shadow-2xl">
+        <div className="relative z-10 text-center max-w-4xl mb-8 rounded-2xl border border-white/35 bg-white/15 p-5 shadow-2xl backdrop-blur-[1px] md:p-7">
+          <h1 className="font-serif text-4xl md:text-6xl font-medium text-neutral-950 mb-4 tracking-wide">
             Visit Our Showroom
           </h1>
 
-          <p className="text-2xl md:text-4xl font-semibold text-white mb-4">
+          <p className="text-lg md:text-2xl font-medium text-yellow-800 mb-3 tracking-wide">
             Newleaf Windows & Doors
           </p>
 
-          <p className="text-xl md:text-3xl text-yellow-400 font-medium">
+          <p className="text-sm md:text-xl text-neutral-800 font-medium tracking-wide">
             Unit 5, Pipewell Road, Desborough, NN14 2SW
           </p>
         </div>
@@ -23,7 +35,7 @@ export default function ShowroomPage() {
         {/* PHONE STYLE VIDEO */}
         <div className="relative z-10 flex justify-center">
 
-          <div className="w-[320px] md:w-[380px] rounded-[40px] border-4 border-yellow-500 shadow-2xl overflow-hidden bg-black">
+          <div className="w-[320px] md:w-[380px] overflow-hidden rounded-[32px] shadow-2xl">
 
             <video
               src="/videos/showroom.mp4"
@@ -39,12 +51,12 @@ export default function ShowroomPage() {
 
         </div>
 
-        <a
+        <Link
           href="/"
-          className="relative z-10 inline-block mt-10 border-2 border-yellow-500 text-yellow-400 px-8 py-4 rounded-2xl hover:bg-yellow-500 hover:text-black transition text-lg"
+          className="relative z-10 inline-block mt-10 font-serif text-xl font-medium tracking-wide text-neutral-950 drop-shadow-md transition hover:text-yellow-700"
         >
           ← Back to Home
-        </a>
+        </Link>
 
       </section>
 
