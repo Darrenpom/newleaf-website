@@ -11,11 +11,6 @@ export default function Home() {
 
     const accessKey = "2fa29ea3-1d5a-4773-b5b9-e91c68ea9a5d";
 
-    if (!accessKey || accessKey === "PASTE_YOUR_WEB3FORMS_KEY_HERE") {
-      setQuoteStatus("Form key missing. Add your Web3Forms access key first.");
-      return;
-    }
-
     const formData = new FormData(form);
     const firstName = formData.get("firstName")?.toString() || "";
     const lastName = formData.get("lastName")?.toString() || "";
