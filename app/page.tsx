@@ -103,8 +103,10 @@ Address: ${house}, ${postcode}`
       <header className="sticky top-0 z-50">
 
         {/* TOP INFO BAR */}
-        <div className="bg-yellow-500 text-black text-xs md:text-sm py-2 px-4 flex justify-center md:justify-between items-center">
-          <div>5 Pipewell Industrial Estate, Kettering, NN14 2SW</div>
+        <div className="flex items-center justify-center bg-yellow-500 px-4 py-2.5 text-center text-black">
+          <div className="font-serif text-sm font-medium tracking-wide md:text-base">
+            Locals looking after locals across Northamptonshire
+          </div>
         </div>
 
         {/* MAIN NAV BAR */}
@@ -123,6 +125,10 @@ Address: ${house}, ${postcode}`
             <a href="/gallery" className="hover:text-yellow-400 transition">
               Completed Work
             </a>
+
+            <Link href="/#product-guides" className="hover:text-yellow-400 transition">
+              Products & Brochures
+            </Link>
 
             <a
               href="/showroom"
@@ -154,15 +160,22 @@ Address: ${house}, ${postcode}`
               Contact
             </a>
 
+            <Link
+              href="/#get-a-price"
+              className="border-b border-yellow-500 pb-1 font-semibold text-yellow-400 transition hover:border-yellow-300 hover:text-yellow-300"
+            >
+              Request a Quote
+            </Link>
+
           </nav>
 
           {/* MOBILE CALL + MENU BUTTONS */}
           <div className="md:hidden flex items-center gap-3">
             <a
-              href="tel:01536601292"
-              className="bg-yellow-500 text-black px-4 py-2 rounded-full font-bold"
+              href="#get-a-price"
+              className="border-b border-yellow-500 pb-1 text-sm font-semibold text-yellow-400"
             >
-              Call Now
+              Quote
             </a>
 
             <button
@@ -185,6 +198,10 @@ Address: ${house}, ${postcode}`
                 Gallery
               </a>
 
+              <Link href="/#product-guides" className="text-white hover:text-yellow-400">
+                Products
+              </Link>
+
               <a href="/showroom" className="text-white hover:text-yellow-400">
                 Showroom
               </a>
@@ -198,6 +215,13 @@ Address: ${house}, ${postcode}`
                 className="text-white hover:text-yellow-400"
               >
                 Contact
+              </a>
+
+              <a
+                href="tel:01536601292"
+                className="text-yellow-400 hover:text-yellow-300"
+              >
+                Call
               </a>
             </div>
           )}
@@ -356,11 +380,19 @@ Address: ${house}, ${postcode}`
       </section>
 
       {/* PRODUCT GUIDES SECTION */}
-      <section className="bg-neutral-950 px-6 py-20 text-white">
-        <div className="mx-auto max-w-6xl">
+      <section id="product-guides" className="relative overflow-hidden px-6 py-20 text-neutral-950">
+        <img
+          src="/showroom-fresh-bg.png"
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-white/76"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-white/95 via-neutral-50/90 to-yellow-100/65"></div>
+
+        <div className="relative z-10 mx-auto max-w-6xl">
           <div className="grid gap-8 md:grid-cols-[0.8fr_1.2fr] md:items-end">
             <div>
-              <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-yellow-400">
+              <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-yellow-700">
                 Product guides
               </p>
 
@@ -369,7 +401,7 @@ Address: ${house}, ${postcode}`
               </h2>
             </div>
 
-            <p className="text-lg leading-relaxed text-neutral-300">
+            <p className="text-lg leading-relaxed text-neutral-700">
               Browse more product ranges, brochures and design tools through
               our extended catalogue. These guides open in a new tab so you can
               keep the Newleaf site close by while comparing options.
@@ -377,43 +409,39 @@ Address: ${house}, ${postcode}`
           </div>
 
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {productGuides.map((guide, index) => (
+            {productGuides.map((guide) => (
               <a
                 key={guide.title}
                 href={guide.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative min-h-[250px] overflow-hidden border border-white/10 bg-neutral-900 p-6 shadow-2xl transition duration-300 hover:-translate-y-1 hover:border-yellow-500/70 hover:bg-neutral-800 hover:shadow-yellow-500/10"
+                className="group relative min-h-[235px] overflow-hidden border border-yellow-700/18 bg-white/88 p-7 shadow-xl backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-yellow-600/70 hover:bg-white hover:shadow-2xl"
               >
                 <div className="absolute inset-x-0 top-0 h-1 bg-yellow-500"></div>
 
                 <div className="flex items-start justify-between gap-5">
                   <div>
-                    <p className="text-xs font-semibold uppercase tracking-wide text-yellow-500/90">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-yellow-700">
                       {guide.label}
                     </p>
 
-                    <h3 className="mt-3 text-2xl font-semibold leading-tight text-white">
+                    <h3 className="mt-3 text-2xl font-semibold leading-tight text-neutral-950">
                       {guide.title}
                     </h3>
                   </div>
-
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center border border-yellow-500/50 bg-black text-sm font-bold text-yellow-400 transition group-hover:bg-yellow-500 group-hover:text-black">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
                 </div>
 
-                <p className="mt-5 leading-relaxed text-neutral-300">
+                <p className="mt-5 leading-relaxed text-neutral-700">
                   {guide.description}
                 </p>
 
-                <div className="absolute inset-x-6 bottom-6 flex items-center justify-between border-t border-white/10 pt-4">
-                  <span className="text-sm font-semibold uppercase tracking-wide text-yellow-400">
+                <div className="absolute inset-x-7 bottom-6 flex items-center justify-between border-t border-yellow-700/15 pt-4">
+                  <span className="text-sm font-semibold uppercase tracking-wide text-yellow-700">
                     Open guide
                   </span>
                   <span
                     aria-hidden="true"
-                    className="text-xl text-yellow-500 transition group-hover:translate-x-1"
+                    className="flex h-9 w-9 items-center justify-center border border-yellow-500/60 bg-neutral-950 text-lg text-yellow-400 transition group-hover:translate-x-1 group-hover:bg-yellow-500 group-hover:text-black"
                   >
                     {">"}
                   </span>
@@ -425,7 +453,7 @@ Address: ${house}, ${postcode}`
       </section>
 
       {/* QUOTE SECTION */}
-      <section className="relative overflow-hidden px-6 py-16">
+      <section id="get-a-price" className="relative scroll-mt-24 overflow-hidden px-6 py-16">
         <img
           src="/showroom-fresh-bg.png"
           alt=""
