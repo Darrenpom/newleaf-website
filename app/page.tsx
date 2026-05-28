@@ -307,8 +307,15 @@ Address: ${house}, ${postcode}`
 
       </section>
 
+      <div
+        className="relative bg-scroll bg-cover bg-center md:bg-fixed"
+        style={{ backgroundImage: "url('/showroom-fresh-bg.png')" }}
+      >
+      <div className="absolute inset-0 bg-white/58"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-white/68 via-white/42 to-white/64"></div>
+      <div className="relative z-10">
       {/* ABOUT SECTION */}
-      <section className="bg-white px-6 py-16 text-neutral-950">
+      <section className="px-6 py-16 text-neutral-950">
         <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-[1.2fr_0.8fr]">
           <div>
             <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-yellow-700">
@@ -332,7 +339,7 @@ Address: ${house}, ${postcode}`
             </p>
           </div>
 
-          <div className="rounded-2xl border border-yellow-500/30 bg-neutral-950 p-8 text-white shadow-2xl">
+          <div className="border border-yellow-500/40 bg-black/75 p-8 text-white shadow-2xl">
             <h3 className="mb-5 text-2xl font-semibold text-yellow-400">
               Why customers choose us
             </h3>
@@ -348,7 +355,7 @@ Address: ${house}, ${postcode}`
       </section>
 
       {/* LOCAL SEO SECTION */}
-      <section className="bg-neutral-100 px-6 py-16 text-neutral-950">
+      <section className="px-6 py-16 text-neutral-950">
         <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-[0.85fr_1.15fr]">
           <div>
             <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-yellow-700">
@@ -381,15 +388,7 @@ Address: ${house}, ${postcode}`
 
       {/* PRODUCT GUIDES SECTION */}
       <section id="product-guides" className="relative overflow-hidden px-6 py-20 text-neutral-950">
-        <img
-          src="/showroom-fresh-bg.png"
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-        <div className="absolute inset-0 bg-white/76"></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-white/95 via-neutral-50/90 to-yellow-100/65"></div>
-
-        <div className="relative z-10 mx-auto max-w-6xl">
+        <div className="mx-auto max-w-6xl">
           <div className="grid gap-8 md:grid-cols-[0.8fr_1.2fr] md:items-end">
             <div>
               <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-yellow-700">
@@ -415,7 +414,7 @@ Address: ${house}, ${postcode}`
                 href={guide.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative min-h-[235px] overflow-hidden border border-yellow-700/18 bg-white/88 p-7 shadow-xl backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-yellow-600/70 hover:bg-white hover:shadow-2xl"
+                className="group relative min-h-[235px] overflow-hidden border border-yellow-700/25 bg-white/86 p-7 shadow-xl backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-yellow-600/70 hover:bg-white hover:shadow-2xl"
               >
                 <div className="absolute inset-x-0 top-0 h-1 bg-yellow-500"></div>
 
@@ -453,16 +452,13 @@ Address: ${house}, ${postcode}`
       </section>
 
       {/* QUOTE SECTION */}
-      <section id="get-a-price" className="relative scroll-mt-24 overflow-hidden px-6 py-16">
-        <img
-          src="/showroom-fresh-bg.png"
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-        <div className="absolute inset-0 bg-white/45"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-white/10 to-white/50"></div>
+      <section
+        id="get-a-price"
+        className="relative flex min-h-screen scroll-mt-24 items-center overflow-hidden px-6 py-20"
+      >
+        <div className="absolute inset-0"></div>
 
-        <div className="relative z-10 mx-auto max-w-3xl bg-white/85 p-6 text-center shadow-2xl backdrop-blur-sm md:p-10">
+        <div className="relative z-10 mx-auto max-w-3xl border border-yellow-600/45 p-6 text-center shadow-2xl md:p-10">
           <h2 className="font-serif text-4xl font-medium text-neutral-950 md:text-5xl">
             Get a Price
           </h2>
@@ -556,14 +552,14 @@ Address: ${house}, ${postcode}`
       </section>
 
       {/* CERTASS SECTION */}
-      <section className="bg-neutral-900 border-t border-yellow-500/20 border-b border-yellow-500/20 py-10 px-6">
+      <section className="border-y border-yellow-500/25 px-6 py-10">
         <div className="max-w-6xl mx-auto text-center">
 
           <h2 className="text-3xl md:text-4xl font-bold text-yellow-500 mb-4">
             Trusted & Accredited
           </h2>
 
-          <p className="text-neutral-300 text-lg max-w-3xl mx-auto mb-8">
+          <p className="text-neutral-950 text-lg max-w-3xl mx-auto mb-8">
             Proud CERTASS registered installers delivering compliant,
             high-quality window and door installations across the region.
           </p>
@@ -582,14 +578,14 @@ Address: ${house}, ${postcode}`
       </section>
 
       {/* MAP SECTION */}
-      <section className="bg-neutral-900 px-6 py-16 border-t border-yellow-500/20">
+      <section className="border-t border-yellow-500/25 px-6 py-16">
         <div className="max-w-5xl mx-auto text-center">
 
           <h2 className="text-3xl md:text-4xl font-bold text-yellow-500 mb-4">
             Find Our Showroom
           </h2>
 
-          <p className="text-neutral-300 text-lg mb-8">
+          <p className="text-neutral-950 text-lg mb-8">
             5 Pipewell Industrial Estate, Kettering, NN14 2SW
           </p>
 
@@ -614,38 +610,40 @@ Address: ${house}, ${postcode}`
       </section>
 
       {/* RICH BLACK SECTION UNDER HERO */}
-      <section className="bg-neutral-950 px-6 py-20 border-t border-yellow-500/20">
+      <section className="border-t border-yellow-500/25 px-6 py-20">
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center">
 
-          <div className="bg-white/10 border border-white/15 rounded-2xl p-8 shadow-2xl">
+          <div className="border border-yellow-700/30 p-8 shadow-xl">
             <h3 className="text-yellow-400 text-2xl font-semibold mb-3">
               Premium Products
             </h3>
-            <p className="text-neutral-300">
+            <p className="text-neutral-950">
               Carefully selected windows and doors designed for lasting performance.
             </p>
           </div>
 
-          <div className="bg-white/10 border border-white/15 rounded-2xl p-8 shadow-2xl">
+          <div className="border border-yellow-700/30 p-8 shadow-xl">
             <h3 className="text-yellow-400 text-2xl font-semibold mb-3">
               Expert Installation
             </h3>
-            <p className="text-neutral-300">
+            <p className="text-neutral-950">
               Installed with care, precision and attention to detail from start to finish.
             </p>
           </div>
 
-          <div className="bg-white/10 border border-white/15 rounded-2xl p-8 shadow-2xl">
+          <div className="border border-yellow-700/30 p-8 shadow-xl">
             <h3 className="text-yellow-400 text-2xl font-semibold mb-3">
               Local Showroom
             </h3>
-            <p className="text-neutral-300">
+            <p className="text-neutral-950">
               Visit us in Desborough to view products and speak with the experts.
             </p>
           </div>
 
         </div>
       </section>
+      </div>
+      </div>
 
     </main>
   );
