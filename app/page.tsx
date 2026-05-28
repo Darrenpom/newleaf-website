@@ -1,5 +1,6 @@
 ﻿"use client";
 import Image from "next/image";
+import Link from "next/link";
 import { type FormEvent, useState } from "react";
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -71,15 +72,15 @@ Address: ${house}, ${postcode}`
         {/* MAIN NAV BAR */}
         <div className="relative bg-black/90 backdrop-blur-md border-b border-yellow-500/20 px-4 md:px-6 py-4 flex justify-between items-center">
 
-          <a href="/" className="text-base md:text-xl font-bold tracking-wide">
+          <Link href="/" className="text-base md:text-xl font-bold tracking-wide">
             Newleaf Windows & Doors
-          </a>
+          </Link>
 
           <nav className="hidden md:flex gap-6 text-white font-medium items-center">
 
-            <a href="/" className="hover:text-yellow-400 transition">
+            <Link href="/" className="hover:text-yellow-400 transition">
               Home
-            </a>
+            </Link>
 
             <a href="/gallery" className="hover:text-yellow-400 transition">
               Completed Work
@@ -263,7 +264,9 @@ Address: ${house}, ${postcode}`
 
             <p className="text-lg leading-relaxed text-neutral-700">
               Visit our local showroom to see products in person, compare styles, and get
-              friendly advice before making a decision.
+              friendly advice before making a decision. We work with customers across
+              Northamptonshire, including Kettering, Desborough, Northampton,
+              Wellingborough and nearby villages.
             </p>
           </div>
 
@@ -278,6 +281,38 @@ Address: ${house}, ${postcode}`
               <p>Careful, tidy installation</p>
               <p>CERTASS registered installers</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* LOCAL SEO SECTION */}
+      <section className="bg-neutral-100 px-6 py-16 text-neutral-950">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-[0.85fr_1.15fr]">
+          <div>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-yellow-700">
+              Local Northamptonshire service
+            </p>
+
+            <h2 className="font-serif text-4xl font-medium leading-tight md:text-5xl">
+              Windows and doors for homes across Northamptonshire.
+            </h2>
+          </div>
+
+          <div>
+            <p className="text-lg leading-relaxed text-neutral-700">
+              From replacement windows to front doors, patio doors and French
+              doors, Newleaf supplies and installs products for homeowners
+              across Northamptonshire. Our team regularly helps customers in
+              Northampton, Kettering, Desborough, Wellingborough, Corby,
+              Daventry, Towcester and the surrounding villages.
+            </p>
+
+            <Link
+              href="/windows-and-doors-northamptonshire"
+              className="mt-6 inline-flex bg-yellow-500 px-7 py-4 font-bold text-black transition hover:bg-yellow-400"
+            >
+              Windows and Doors in Northamptonshire
+            </Link>
           </div>
         </div>
       </section>
