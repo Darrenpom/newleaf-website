@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { type FormEvent, useState } from "react";
 export default function Home() {
-  const [menuOpen, setMenuOpen] = useState(false);
   const [quoteStatus, setQuoteStatus] = useState("");
   const productGuides = [
     {
@@ -169,7 +168,7 @@ Address: ${house}, ${postcode}`
 
           </nav>
 
-          {/* MOBILE CALL + MENU BUTTONS */}
+          {/* MOBILE QUOTE BUTTON */}
           <div className="md:hidden flex items-center gap-3">
             <a
               href="#get-a-price"
@@ -177,56 +176,34 @@ Address: ${house}, ${postcode}`
             >
               Quote
             </a>
-
-            <button
-              type="button"
-              aria-label={menuOpen ? "Close menu" : "Open menu"}
-              aria-expanded={menuOpen}
-              onClick={() => setMenuOpen(!menuOpen)}
-              className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-full border border-yellow-500 text-yellow-400 transition hover:bg-yellow-500/10"
-            >
-              <span className={`h-0.5 w-5 bg-current transition ${menuOpen ? "translate-y-2 rotate-45" : ""}`}></span>
-              <span className={`h-0.5 w-5 bg-current transition ${menuOpen ? "opacity-0" : ""}`}></span>
-              <span className={`h-0.5 w-5 bg-current transition ${menuOpen ? "-translate-y-2 -rotate-45" : ""}`}></span>
-            </button>
           </div>
 
-          {/* MOBILE MENU LINKS */}
-          {menuOpen && (
-            <div className="md:hidden absolute top-full left-0 w-full bg-black border-t border-yellow-500/20 px-4 py-3 flex flex-wrap justify-center gap-4 text-sm">
-              <a href="/gallery" className="text-white hover:text-yellow-400">
-                Gallery
-              </a>
-
-              <Link href="/#product-guides" className="text-white hover:text-yellow-400">
-                Products
-              </Link>
-
-              <a href="/showroom" className="text-white hover:text-yellow-400">
-                Showroom
-              </a>
-
-              <a href="/showroom-open-times" className="text-white hover:text-yellow-400">
-                Open Times
-              </a>
-
-              <a
-                href="mailto:info@newleafwindows.com"
-                className="text-white hover:text-yellow-400"
-              >
-                Contact
-              </a>
-
-              <a
-                href="tel:01536601292"
-                className="text-yellow-400 hover:text-yellow-300"
-              >
-                Call
-              </a>
-            </div>
-          )}
-
         </div>
+
+        {/* MOBILE ALWAYS-VISIBLE LINKS */}
+        <nav className="md:hidden flex gap-4 overflow-x-auto border-t border-yellow-500/20 bg-black px-4 py-3 text-sm font-medium text-white">
+          <Link href="/" className="shrink-0 hover:text-yellow-400">
+            Home
+          </Link>
+          <a href="/gallery" className="shrink-0 hover:text-yellow-400">
+            Gallery
+          </a>
+          <Link href="/#product-guides" className="shrink-0 hover:text-yellow-400">
+            Products
+          </Link>
+          <a href="/showroom" className="shrink-0 hover:text-yellow-400">
+            Showroom
+          </a>
+          <a href="/showroom-open-times" className="shrink-0 hover:text-yellow-400">
+            Open Times
+          </a>
+          <a href="mailto:info@newleafwindows.com" className="shrink-0 hover:text-yellow-400">
+            Contact
+          </a>
+          <a href="tel:01536601292" className="shrink-0 text-yellow-400 hover:text-yellow-300">
+            Call
+          </a>
+        </nav>
       </header>
 
       {/* HERO SECTION */}
