@@ -5,6 +5,38 @@ import { type FormEvent, useState } from "react";
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [quoteStatus, setQuoteStatus] = useState("");
+  const productGuides = [
+    {
+      title: "Windows",
+      description: "Compare uPVC, aluminium, timber and timber alternative window ranges.",
+      href: "https://www.corby-doubleglazing.co.uk/windows/",
+    },
+    {
+      title: "Doors",
+      description: "Browse front doors, patio doors, French doors, bi-folding doors and more.",
+      href: "https://www.corby-doubleglazing.co.uk/doors/",
+    },
+    {
+      title: "Composite Door Designer",
+      description: "Design a Solidor or Residor composite door and explore colours and hardware.",
+      href: "https://www.corby-doubleglazing.co.uk/doors/door-designers/",
+    },
+    {
+      title: "Conservatories",
+      description: "Explore conservatories, orangeries and garden room options.",
+      href: "https://www.corby-doubleglazing.co.uk/orangeries-and-conservatories-corby/",
+    },
+    {
+      title: "Energy Savings Calculator",
+      description: "Estimate possible savings from upgrading to energy-efficient windows.",
+      href: "https://www.corby-doubleglazing.co.uk/energy-calculator/",
+    },
+    {
+      title: "Brochures",
+      description: "Download product brochures for windows, doors and glazing options.",
+      href: "https://www.corby-doubleglazing.co.uk/brochure-downloads/",
+    },
+  ];
 
   async function handleQuoteSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -313,6 +345,57 @@ Address: ${house}, ${postcode}`
             >
               Windows and Doors in Northamptonshire
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* PRODUCT GUIDES SECTION */}
+      <section className="bg-neutral-950 px-6 py-16 text-white">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-8 md:grid-cols-[0.8fr_1.2fr] md:items-end">
+            <div>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-yellow-400">
+                Product guides
+              </p>
+
+              <h2 className="font-serif text-4xl font-medium leading-tight md:text-5xl">
+                Explore our extended product catalogue.
+              </h2>
+            </div>
+
+            <p className="text-lg leading-relaxed text-neutral-300">
+              Browse more product ranges, brochures and design tools through
+              our extended catalogue. These guides open in a new tab so you can
+              keep the Newleaf site close by while comparing options.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {productGuides.map((guide) => (
+              <a
+                key={guide.title}
+                href={guide.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group border border-white/10 bg-white/5 p-6 shadow-2xl transition hover:border-yellow-500/60 hover:bg-white/10"
+              >
+                <div className="flex min-h-10 items-start justify-between gap-4">
+                  <h3 className="text-2xl font-semibold text-yellow-400">
+                    {guide.title}
+                  </h3>
+                  <span
+                    aria-hidden="true"
+                    className="text-2xl text-yellow-500 transition group-hover:translate-x-1"
+                  >
+                    {">"}
+                  </span>
+                </div>
+
+                <p className="mt-4 leading-relaxed text-neutral-300">
+                  {guide.description}
+                </p>
+              </a>
+            ))}
           </div>
         </div>
       </section>
