@@ -8,31 +8,37 @@ export default function Home() {
   const productGuides = [
     {
       title: "Windows",
+      label: "Window ranges",
       description: "Compare uPVC, aluminium, timber and timber alternative window ranges.",
       href: "https://www.corby-doubleglazing.co.uk/windows/",
     },
     {
       title: "Doors",
+      label: "Door ranges",
       description: "Browse front doors, patio doors, French doors, bi-folding doors and more.",
       href: "https://www.corby-doubleglazing.co.uk/doors/",
     },
     {
       title: "Composite Door Designer",
+      label: "Design tool",
       description: "Design a Solidor or Residor composite door and explore colours and hardware.",
       href: "https://www.corby-doubleglazing.co.uk/doors/door-designers/",
     },
     {
       title: "Conservatories",
+      label: "Living spaces",
       description: "Explore conservatories, orangeries and garden room options.",
       href: "https://www.corby-doubleglazing.co.uk/orangeries-and-conservatories-corby/",
     },
     {
       title: "Energy Savings Calculator",
+      label: "Planning tool",
       description: "Estimate possible savings from upgrading to energy-efficient windows.",
       href: "https://www.corby-doubleglazing.co.uk/energy-calculator/",
     },
     {
       title: "Brochures",
+      label: "Downloads",
       description: "Download product brochures for windows, doors and glazing options.",
       href: "https://www.corby-doubleglazing.co.uk/brochure-downloads/",
     },
@@ -350,7 +356,7 @@ Address: ${house}, ${postcode}`
       </section>
 
       {/* PRODUCT GUIDES SECTION */}
-      <section className="bg-neutral-950 px-6 py-16 text-white">
+      <section className="bg-neutral-950 px-6 py-20 text-white">
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-8 md:grid-cols-[0.8fr_1.2fr] md:items-end">
             <div>
@@ -371,29 +377,47 @@ Address: ${house}, ${postcode}`
           </div>
 
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {productGuides.map((guide) => (
+            {productGuides.map((guide, index) => (
               <a
                 key={guide.title}
                 href={guide.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group border border-white/10 bg-white/5 p-6 shadow-2xl transition hover:border-yellow-500/60 hover:bg-white/10"
+                className="group relative min-h-[250px] overflow-hidden border border-white/10 bg-neutral-900 p-6 shadow-2xl transition duration-300 hover:-translate-y-1 hover:border-yellow-500/70 hover:bg-neutral-800 hover:shadow-yellow-500/10"
               >
-                <div className="flex min-h-10 items-start justify-between gap-4">
-                  <h3 className="text-2xl font-semibold text-yellow-400">
-                    {guide.title}
-                  </h3>
+                <div className="absolute inset-x-0 top-0 h-1 bg-yellow-500"></div>
+
+                <div className="flex items-start justify-between gap-5">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-wide text-yellow-500/90">
+                      {guide.label}
+                    </p>
+
+                    <h3 className="mt-3 text-2xl font-semibold leading-tight text-white">
+                      {guide.title}
+                    </h3>
+                  </div>
+
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center border border-yellow-500/50 bg-black text-sm font-bold text-yellow-400 transition group-hover:bg-yellow-500 group-hover:text-black">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                </div>
+
+                <p className="mt-5 leading-relaxed text-neutral-300">
+                  {guide.description}
+                </p>
+
+                <div className="absolute inset-x-6 bottom-6 flex items-center justify-between border-t border-white/10 pt-4">
+                  <span className="text-sm font-semibold uppercase tracking-wide text-yellow-400">
+                    Open guide
+                  </span>
                   <span
                     aria-hidden="true"
-                    className="text-2xl text-yellow-500 transition group-hover:translate-x-1"
+                    className="text-xl text-yellow-500 transition group-hover:translate-x-1"
                   >
                     {">"}
                   </span>
                 </div>
-
-                <p className="mt-4 leading-relaxed text-neutral-300">
-                  {guide.description}
-                </p>
               </a>
             ))}
           </div>
