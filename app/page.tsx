@@ -115,7 +115,7 @@ Address: ${house}, ${postcode}`
     <main className="min-h-screen bg-black text-white">
       <a
         href="#residence-collection"
-        className="fixed right-6 top-1/2 z-40 hidden w-[30rem] -translate-y-1/2 text-center text-white drop-shadow-2xl transition hover:-translate-y-[52%] xl:block"
+        className="fixed right-6 top-[38%] z-40 hidden w-[34rem] -translate-y-1/2 text-center text-white transition hover:-translate-y-[52%] xl:block"
         aria-label="View The Residence Collection"
       >
         <Image
@@ -125,7 +125,7 @@ Address: ${house}, ${postcode}`
           height={300}
           className="h-auto w-full"
         />
-        <span className="mt-4 block font-serif text-xl uppercase tracking-[0.25em] text-white">
+        <span className="mt-4 block font-serif text-2xl font-semibold uppercase tracking-[0.32em] text-white [text-shadow:_0_2px_8px_rgb(0_0_0_/_65%)]">
           View Ranges
         </span>
       </a>
