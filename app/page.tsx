@@ -485,9 +485,18 @@ Address: ${house}, ${postcode}`
                   allowFullScreen
                 />
               </div>
-              <p className="mt-4 border-l-4 border-yellow-500 pl-4 text-sm font-bold uppercase tracking-[0.25em] text-yellow-400">
-                Composite Doors by Newleaf
-              </p>
+              <div className="mt-4 flex flex-wrap items-center gap-4 border-l-4 border-yellow-500 pl-4">
+                <Image
+                  src="/Endurance%20logo.%20png.jpg"
+                  alt="Endurance"
+                  width={260}
+                  height={94}
+                  className="h-auto w-40"
+                />
+                <p className="text-sm font-bold uppercase tracking-[0.25em] text-yellow-400">
+                  Doors by Newleaf
+                </p>
+              </div>
             </div>
           </div>
         </div>
