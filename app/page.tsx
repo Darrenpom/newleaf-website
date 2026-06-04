@@ -113,6 +113,22 @@ Address: ${house}, ${postcode}`
 
   return (
     <main className="min-h-screen bg-black text-white">
+      <a
+        href="#residence-collection"
+        className="fixed right-4 top-1/2 z-40 hidden w-40 -translate-y-1/2 border border-yellow-500/35 bg-[#10191a]/95 p-3 text-center text-white shadow-2xl transition hover:-translate-y-[52%] hover:border-yellow-400 lg:block"
+        aria-label="View The Residence Collection"
+      >
+        <Image
+          src="/residence-collection-logo.png.jpg"
+          alt="The Residence Collection"
+          width={260}
+          height={100}
+          className="h-auto w-full"
+        />
+        <span className="mt-3 block text-xs font-bold uppercase tracking-wide text-yellow-400">
+          View Ranges
+        </span>
+      </a>
 
       {/* STICKY HEADER */}
       <header className="sticky top-0 z-50">
@@ -513,7 +529,7 @@ Address: ${house}, ${postcode}`
       </section>
 
       {/* RESIDENCE COLLECTION FEATURE */}
-      <section className="px-6 py-20 text-neutral-950">
+      <section id="residence-collection" className="scroll-mt-24 px-6 py-20 text-neutral-950">
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-8 md:grid-cols-[0.8fr_1.2fr] md:items-end">
             <div>
