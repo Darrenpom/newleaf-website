@@ -115,17 +115,17 @@ Address: ${house}, ${postcode}`
     <main className="min-h-screen bg-black text-white">
       <a
         href="#residence-collection"
-        className="fixed right-4 top-1/2 z-40 hidden w-40 -translate-y-1/2 border border-yellow-500/35 bg-[#10191a]/95 p-3 text-center text-white shadow-2xl transition hover:-translate-y-[52%] hover:border-yellow-400 lg:block"
+        className="fixed right-6 top-1/2 z-40 hidden w-[30rem] -translate-y-1/2 text-center text-white drop-shadow-2xl transition hover:-translate-y-[52%] xl:block"
         aria-label="View The Residence Collection"
       >
         <Image
           src="/residence-collection-logo.png.jpg"
           alt="The Residence Collection"
-          width={260}
-          height={100}
+          width={780}
+          height={300}
           className="h-auto w-full"
         />
-        <span className="mt-3 block text-xs font-bold uppercase tracking-wide text-yellow-400">
+        <span className="mt-4 block font-serif text-xl uppercase tracking-[0.25em] text-white">
           View Ranges
         </span>
       </a>
