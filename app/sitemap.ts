@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/windows-and-doors-kettering",
     "/windows-and-doors-market-harborough",
     "/windows-and-doors-leicester",
+    "/endurance-doors",
     "/gallery",
     "/showroom",
     "/showroom-open-times",

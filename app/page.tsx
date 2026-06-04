@@ -186,6 +186,10 @@ Address: ${house}, ${postcode}`
               Showroom Open Times
             </a>
 
+            <Link href="/endurance-doors" className="hover:text-yellow-400 transition">
+              Endurance Doors
+            </Link>
+
             <a
               href="https://www.facebook.com/newleafwindowsanddoors"
               target="_blank"
@@ -240,6 +244,9 @@ Address: ${house}, ${postcode}`
           <a href="/showroom-open-times" className="shrink-0 hover:text-yellow-400">
             Open Times
           </a>
+          <Link href="/endurance-doors" className="shrink-0 hover:text-yellow-400">
+            Endurance
+          </Link>
           <a href="mailto:info@newleafwindows.com" className="shrink-0 hover:text-yellow-400">
             Contact
           </a>
@@ -407,6 +414,75 @@ Address: ${house}, ${postcode}`
                 </p>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ENDURANCE DOORS FEATURE */}
+      <section id="endurance-doors" className="scroll-mt-24 px-6 py-16 text-neutral-950">
+        <div className="mx-auto grid max-w-6xl overflow-hidden border border-yellow-700/25 bg-neutral-950 text-white shadow-2xl md:grid-cols-[1.05fr_0.95fr]">
+          <div className="p-8 md:p-12">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-yellow-400">
+              Premium composite doors
+            </p>
+            <h2 className="font-serif text-5xl font-medium leading-tight md:text-6xl">
+              Endurance doors, designed with Newleaf.
+            </h2>
+            <p className="mt-5 text-lg leading-relaxed text-neutral-200">
+              Newleaf is a trusted Endurance installer, helping homeowners
+              choose premium composite doors across Northamptonshire and nearby
+              areas with advice, measuring and quotes handled directly by our
+              local team.
+            </p>
+
+            <div className="mt-7 grid gap-3 text-sm font-semibold text-neutral-100 sm:grid-cols-2">
+              <span className="border border-white/10 bg-white/5 px-4 py-3">
+                Trusted installer
+              </span>
+              <span className="border border-white/10 bg-white/5 px-4 py-3">
+                Solid-core composite doors
+              </span>
+              <span className="border border-white/10 bg-white/5 px-4 py-3">
+                Colours, glass and hardware
+              </span>
+              <span className="border border-white/10 bg-white/5 px-4 py-3">
+                Quote handled by Newleaf
+              </span>
+            </div>
+
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+              <Link
+                href="/endurance-doors"
+                className="bg-yellow-500 px-7 py-4 text-center font-bold text-black transition hover:bg-yellow-400"
+              >
+                View Endurance Doors
+              </Link>
+              <Link
+                href="/#get-a-price"
+                className="border-2 border-yellow-500 px-7 py-4 text-center font-bold text-yellow-400 transition hover:bg-yellow-500 hover:text-black"
+              >
+                Request an Endurance Quote
+              </Link>
+            </div>
+          </div>
+
+          <div className="relative min-h-[420px]">
+            <Image
+              src="/hero.png"
+              alt="Premium Endurance composite door inspiration"
+              fill
+              sizes="(min-width: 768px) 45vw, 100vw"
+              className="object-cover opacity-75"
+            />
+            <div className="absolute inset-0 bg-black/35" />
+            <div className="absolute bottom-8 left-8 right-8 border-l-4 border-yellow-500 pl-5">
+              <p className="font-serif text-5xl font-semibold uppercase tracking-[0.18em] text-white drop-shadow-2xl">
+                ENDURANCE
+              </p>
+              <p className="mt-2 text-sm font-bold uppercase tracking-[0.25em] text-yellow-400">
+                Composite Doors by Newleaf
+              </p>
+            </div>
           </div>
         </div>
       </section>
