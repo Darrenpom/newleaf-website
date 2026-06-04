@@ -130,6 +130,17 @@ Address: ${house}, ${postcode}`
         </span>
       </a>
 
+      <div className="fixed bottom-6 right-6 z-40 hidden h-72 w-96 overflow-hidden border border-yellow-500/40 bg-black shadow-2xl xl:block">
+        <iframe
+          className="h-full w-full"
+          src="https://www.youtube.com/embed/XtDHil3kA_w?rel=0"
+          title="Newleaf Residence Collection video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        />
+      </div>
+
       {/* STICKY HEADER */}
       <header className="sticky top-0 z-50">
 
