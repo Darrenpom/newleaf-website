@@ -130,7 +130,7 @@ Address: ${house}, ${postcode}`
         </span>
       </a>
 
-      <div className="fixed bottom-6 right-6 z-40 hidden h-[36rem] w-[48rem] overflow-hidden shadow-2xl xl:block">
+      <div className="fixed bottom-6 right-6 z-40 hidden aspect-video w-[34rem] overflow-hidden shadow-2xl xl:block">
         <iframe
           className="h-full w-full"
           src="https://www.youtube.com/embed/XtDHil3kA_w?autoplay=1&mute=1&controls=0&rel=0&modestbranding=1&playsinline=1&loop=1&playlist=XtDHil3kA_w"
