@@ -30,24 +30,24 @@ export default function EnduranceDoorsPage() {
                 fill
                 priority={index === 0}
                 sizes="(min-width: 768px) 33vw, 100vw"
-                className="object-cover opacity-70"
+                className="object-cover"
               />
             </div>
           ))}
         </div>
-        <div className="absolute inset-0 bg-black/68" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/75" />
+        <div className="absolute inset-0 bg-black/18" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/35 via-transparent to-black/25" />
 
         <div className="relative z-10 mx-auto max-w-6xl">
           <Link
             href="/"
-            className="font-serif text-lg font-medium text-yellow-400 hover:text-yellow-300"
+            className="inline-flex bg-black/75 px-4 py-2 font-serif text-lg font-medium text-yellow-400 shadow-xl hover:text-yellow-300"
           >
             Back to Home
           </Link>
 
           <div className="grid min-h-[70vh] items-center gap-10 py-12 md:grid-cols-[1.05fr_0.95fr]">
-            <div>
+            <div className="bg-black/72 p-6 shadow-2xl backdrop-blur-sm md:p-8">
               <Image
                 src="/Endurance%20logo.%20png.jpg"
                 alt="Endurance Doors"
@@ -85,7 +85,7 @@ export default function EnduranceDoorsPage() {
               </div>
             </div>
 
-            <div className="border border-yellow-500/35 bg-black/50 p-6 shadow-2xl backdrop-blur-sm md:p-8">
+            <div className="border border-yellow-500/35 bg-black/72 p-6 shadow-2xl backdrop-blur-sm md:p-8">
               <h2 className="font-serif text-3xl font-medium text-yellow-400">
                 Why choose Endurance with Newleaf?
               </h2>
