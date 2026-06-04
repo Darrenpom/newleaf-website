@@ -326,6 +326,64 @@ Address: ${house}, ${postcode}`
         </div>
       </section>
 
+      {/* REVIEWS SECTION */}
+      <section className="px-6 py-16 text-neutral-950">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-8 md:grid-cols-[0.75fr_1.25fr] md:items-end">
+            <div>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-yellow-700">
+                Customer feedback
+              </p>
+              <h2 className="font-serif text-4xl font-medium leading-tight md:text-5xl">
+                Recommended by local homeowners.
+              </h2>
+            </div>
+            <p className="text-lg leading-relaxed text-neutral-700">
+              Real feedback from customers who chose Newleaf for windows, doors
+              and porchway work across the local area.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-5 md:grid-cols-3">
+            {[
+              {
+                name: "Gareth Evans",
+                review:
+                  "Had a new door fitted and it was done by the friendliest and most expert team of guys imaginable. Every step of the process was transparent and it wasn't even that expensive. Highly recommended. We'll be back.",
+              },
+              {
+                name: "Phil Pace",
+                review:
+                  "David was very helpful in all aspects of choosing the right door and bespoke outer porch. Great workmanship from the fitters and very happy with the end result.",
+              },
+              {
+                name: "Michael Haywood",
+                review:
+                  "David the owner is really helpful. We've had doors from him previously and are very happy with the quality. The windows we ordered look good and we are excited for their installation.",
+              },
+            ].map((item) => (
+              <article
+                key={item.name}
+                className="border border-yellow-700/25 bg-white/85 p-7 shadow-xl backdrop-blur-sm"
+              >
+                <div className="mb-4 text-xl text-yellow-600" aria-label="5 star review">
+                  *****
+                </div>
+                <p className="leading-relaxed text-neutral-700">
+                  &ldquo;{item.review}&rdquo;
+                </p>
+                <p className="mt-5 font-semibold text-neutral-950">
+                  {item.name}
+                </p>
+                <p className="mt-1 text-sm font-medium text-yellow-700">
+                  Google review
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ABOUT SECTION */}
       <section className="px-6 py-16 text-neutral-950">
         <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-[1.2fr_0.8fr]">
