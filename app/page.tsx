@@ -474,15 +474,16 @@ Address: ${house}, ${postcode}`
           </div>
 
           <div className="relative min-h-[420px]">
-            <Image
-              src="/hero.png"
-              alt="Premium Endurance composite door inspiration"
-              fill
-              sizes="(min-width: 768px) 45vw, 100vw"
-              className="object-cover opacity-75"
+            <iframe
+              className="absolute left-1/2 top-1/2 h-full w-[178%] -translate-x-1/2 -translate-y-1/2 border-0 opacity-85"
+              src="https://www.youtube.com/embed/Vw3g7Cj1Qwo?autoplay=1&mute=1&controls=0&rel=0&modestbranding=1&playsinline=1&loop=1&playlist=Vw3g7Cj1Qwo&cc_load_policy=1&cc_lang_pref=en"
+              title="Endurance composite doors video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
             />
             <div className="absolute inset-0 bg-black/35" />
-            <div className="absolute bottom-8 left-8 right-8 border-l-4 border-yellow-500 pl-5">
+            <div className="absolute left-8 top-8 border-l-4 border-yellow-500 pl-5">
               <Image
                 src="/Endurance%20logo.%20png.jpg"
                 alt="Endurance Doors"
