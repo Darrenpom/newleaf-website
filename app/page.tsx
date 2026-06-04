@@ -115,7 +115,7 @@ Address: ${house}, ${postcode}`
     <main className="min-h-screen bg-black text-white">
       <a
         href="#residence-collection"
-        className="fixed right-6 top-[38%] z-40 hidden w-[34rem] -translate-y-1/2 text-center text-white transition hover:-translate-y-[52%] xl:block"
+        className="fixed right-6 top-[38%] z-40 hidden w-[38rem] -translate-y-1/2 text-center text-white transition hover:-translate-y-[52%] xl:block"
         aria-label="View The Residence Collection"
       >
         <Image
@@ -125,12 +125,12 @@ Address: ${house}, ${postcode}`
           height={300}
           className="h-auto w-full"
         />
-        <span className="mt-4 block font-serif text-2xl font-semibold uppercase tracking-[0.32em] text-white [text-shadow:_0_2px_8px_rgb(0_0_0_/_65%)]">
+        <span className="mt-4 block font-serif text-[1.7rem] font-semibold uppercase tracking-[0.32em] text-white [text-shadow:_0_2px_8px_rgb(0_0_0_/_65%)]">
           View Ranges
         </span>
       </a>
 
-      <div className="fixed bottom-6 right-6 z-40 hidden aspect-video w-[34rem] overflow-hidden shadow-2xl xl:block">
+      <div className="fixed bottom-6 right-6 z-40 hidden aspect-video w-[38rem] overflow-hidden shadow-2xl xl:block">
         <iframe
           className="h-full w-full"
           src="https://www.youtube.com/embed/XtDHil3kA_w?autoplay=1&mute=1&controls=0&rel=0&modestbranding=1&playsinline=1&loop=1&playlist=XtDHil3kA_w"
@@ -420,7 +420,7 @@ Address: ${house}, ${postcode}`
 
       {/* ENDURANCE DOORS FEATURE */}
       <section id="endurance-doors" className="scroll-mt-24 px-6 py-16 text-neutral-950">
-        <div className="mx-auto grid max-w-6xl overflow-hidden border border-yellow-700/25 bg-neutral-950 text-white shadow-2xl md:grid-cols-[1.05fr_0.95fr]">
+        <div className="mx-auto grid max-w-6xl overflow-hidden border border-yellow-700/25 bg-neutral-950 text-white shadow-2xl md:grid-cols-[0.95fr_1.05fr]">
           <div className="p-8 md:p-12">
             <Image
               src="/Endurance%20logo.%20png.jpg"
@@ -473,7 +473,7 @@ Address: ${house}, ${postcode}`
             </div>
           </div>
 
-          <div className="flex min-h-[420px] items-center bg-black p-5 md:p-8">
+          <div className="flex min-h-[420px] items-center bg-black p-4 md:p-6">
             <div className="w-full">
               <p className="mb-5 border-l-4 border-yellow-500 pl-4 text-xl font-bold uppercase leading-snug tracking-wide text-yellow-400 md:text-2xl">
                 Not all composite doors are the same. Choose a premium
