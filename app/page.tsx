@@ -422,6 +422,13 @@ Address: ${house}, ${postcode}`
       <section id="endurance-doors" className="scroll-mt-24 px-6 py-16 text-neutral-950">
         <div className="mx-auto grid max-w-6xl overflow-hidden border border-yellow-700/25 bg-neutral-950 text-white shadow-2xl md:grid-cols-[1.05fr_0.95fr]">
           <div className="p-8 md:p-12">
+            <Image
+              src="/Endurance%20logo.%20png.jpg"
+              alt="Endurance Doors"
+              width={420}
+              height={150}
+              className="mb-8 h-auto w-72"
+            />
             <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-yellow-400">
               Premium composite doors
             </p>
@@ -476,9 +483,13 @@ Address: ${house}, ${postcode}`
             />
             <div className="absolute inset-0 bg-black/35" />
             <div className="absolute bottom-8 left-8 right-8 border-l-4 border-yellow-500 pl-5">
-              <p className="font-serif text-5xl font-semibold uppercase tracking-[0.18em] text-white drop-shadow-2xl">
-                ENDURANCE
-              </p>
+              <Image
+                src="/Endurance%20logo.%20png.jpg"
+                alt="Endurance Doors"
+                width={420}
+                height={150}
+                className="h-auto w-72 drop-shadow-2xl"
+              />
               <p className="mt-2 text-sm font-bold uppercase tracking-[0.25em] text-yellow-400">
                 Composite Doors by Newleaf
               </p>

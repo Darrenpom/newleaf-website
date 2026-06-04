@@ -35,6 +35,14 @@ export default function EnduranceDoorsPage() {
 
           <div className="grid min-h-[70vh] items-center gap-10 py-12 md:grid-cols-[1.05fr_0.95fr]">
             <div>
+              <Image
+                src="/Endurance%20logo.%20png.jpg"
+                alt="Endurance Doors"
+                width={460}
+                height={165}
+                priority
+                className="mb-8 h-auto w-80"
+              />
               <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-yellow-400">
                 Trusted Endurance installer
               </p>
@@ -83,6 +91,13 @@ export default function EnduranceDoorsPage() {
       <section className="bg-white px-6 py-16 text-neutral-950">
         <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[0.9fr_1.1fr]">
           <div>
+            <Image
+              src="/Endurance%20logo.%20png.jpg"
+              alt="Endurance Doors"
+              width={360}
+              height={130}
+              className="mb-8 h-auto w-64"
+            />
             <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-yellow-700">
               Premium front doors
             </p>
