@@ -104,6 +104,14 @@ export default function GalleryPage() {
                   sizes="(min-width: 1280px) 25vw, (min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                   className="h-auto w-full transition duration-300 group-hover:scale-105"
                 />
+                <div className="bg-black/80 px-4 py-3">
+                  <p className="text-sm font-semibold text-yellow-400">
+                    Completed Newleaf installation
+                  </p>
+                  <p className="mt-1 text-xs leading-relaxed text-neutral-300">
+                    Windows, doors and glazing work across the local area.
+                  </p>
+                </div>
               </button>
             ))}
           </div>

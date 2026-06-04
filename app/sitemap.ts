@@ -6,6 +6,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "",
     "/windows-and-doors-northamptonshire",
+    "/double-glazing-kettering",
+    "/replacement-windows-kettering",
+    "/composite-doors-kettering",
     "/gallery",
     "/showroom",
     "/showroom-open-times",

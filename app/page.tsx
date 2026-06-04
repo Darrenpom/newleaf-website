@@ -275,15 +275,15 @@ Address: ${house}, ${postcode}`
             <div className="h-[1px] bg-yellow-500 flex-1"></div>
           </div>
 
-          <h2 className="text-2xl md:text-5xl font-light leading-tight max-w-5xl text-white drop-shadow-lg">
-            Beautifully crafted windows and doors
+          <h1 className="max-w-5xl text-3xl font-light leading-tight text-white drop-shadow-lg md:text-6xl">
+            Windows and doors in
             <br />
-            designed for{" "}
-            <span className="text-yellow-400">
-              style, security
-            </span>{" "}
-            and lasting performance.
-          </h2>
+            <span className="text-yellow-400">Northamptonshire</span>
+          </h1>
+
+          <p className="mt-5 max-w-4xl text-xl font-light leading-relaxed text-white drop-shadow-lg md:text-3xl">
+            Beautifully crafted for style, security and lasting performance.
+          </p>
 
           <p className="mt-6 text-neutral-300 max-w-3xl text-base md:text-2xl leading-relaxed">
             Premium installations from your local Desborough showroom.
@@ -307,6 +307,25 @@ Address: ${house}, ${postcode}`
       <div className="absolute inset-0 bg-white/58"></div>
       <div className="absolute inset-0 bg-gradient-to-b from-white/68 via-white/42 to-white/64"></div>
       <div className="relative z-10">
+      {/* TRUST STRIP */}
+      <section className="border-b border-yellow-700/20 px-6 py-8 text-neutral-950">
+        <div className="mx-auto grid max-w-6xl gap-4 text-center sm:grid-cols-2 lg:grid-cols-4">
+          {[
+            "CERTASS Registered",
+            "Local Showroom",
+            "Free No-Obligation Quotes",
+            "Northamptonshire Installers",
+          ].map((item) => (
+            <div
+              key={item}
+              className="border border-yellow-700/25 bg-white/80 px-5 py-4 font-semibold shadow-lg backdrop-blur-sm"
+            >
+              {item}
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* ABOUT SECTION */}
       <section className="px-6 py-16 text-neutral-950">
         <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-[1.2fr_0.8fr]">
@@ -375,6 +394,62 @@ Address: ${house}, ${postcode}`
             >
               Windows and Doors in Northamptonshire
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-16 text-neutral-950">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-8 md:grid-cols-[0.8fr_1.2fr] md:items-end">
+            <div>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-yellow-700">
+                Popular local searches
+              </p>
+              <h2 className="font-serif text-4xl font-medium leading-tight md:text-5xl">
+                Local pages for windows and doors near Kettering.
+              </h2>
+            </div>
+            <p className="text-lg leading-relaxed text-neutral-700">
+              If you are comparing options for your home, these pages explain
+              some of the most requested local services before you ask for a
+              quote.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-5 md:grid-cols-3">
+            {[
+              [
+                "Double Glazing Kettering",
+                "Warm, secure glazing options for local homes.",
+                "/double-glazing-kettering",
+              ],
+              [
+                "Replacement Windows Kettering",
+                "Carefully fitted windows from a local team.",
+                "/replacement-windows-kettering",
+              ],
+              [
+                "Composite Doors Kettering",
+                "Secure, stylish doors with showroom advice.",
+                "/composite-doors-kettering",
+              ],
+            ].map(([title, description, href]) => (
+              <Link
+                key={title}
+                href={href}
+                className="border border-yellow-700/25 bg-white/85 p-7 shadow-xl transition hover:-translate-y-1 hover:border-yellow-600/70 hover:bg-white hover:shadow-2xl"
+              >
+                <h3 className="text-2xl font-semibold text-neutral-950">
+                  {title}
+                </h3>
+                <p className="mt-4 leading-relaxed text-neutral-700">
+                  {description}
+                </p>
+                <span className="mt-6 inline-flex font-semibold text-yellow-700">
+                  View service
+                </span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -453,12 +528,16 @@ Address: ${house}, ${postcode}`
 
         <div className="relative z-10 mx-auto max-w-3xl border border-yellow-600/45 p-6 text-center shadow-2xl md:p-10">
           <h2 className="font-serif text-4xl font-medium text-neutral-950 md:text-5xl">
-            Get a Price
+            Request a Free Quote
           </h2>
 
           <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-neutral-700">
             Tell us what you are looking for and we will get back to you with a
             free no-obligation quote.
+          </p>
+
+          <p className="mx-auto mt-3 max-w-xl text-sm font-semibold text-neutral-800">
+            No pressure sales. Just practical advice from a local team.
           </p>
 
           <form onSubmit={handleQuoteSubmit} className="mt-8 grid gap-4 text-left">
@@ -527,7 +606,7 @@ Address: ${house}, ${postcode}`
               type="submit"
               className="mx-auto mt-4 h-14 w-full max-w-xs bg-green-600 px-8 text-lg font-bold text-white shadow-xl transition hover:bg-green-500"
             >
-              Continue
+              Request My Free Quote
             </button>
 
             {quoteStatus && (
