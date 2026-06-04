@@ -852,10 +852,15 @@ Address: ${house}, ${postcode}`
               <option value="" disabled>
                 Select a product *
               </option>
-              <option>Windows</option>
-              <option>Front door</option>
+              <option>Endurance doors</option>
+              <option>Residence windows</option>
+              <option>Composite front door</option>
+              <option>Replacement windows</option>
+              <option>Double glazing</option>
               <option>French doors</option>
               <option>Patio or sliding doors</option>
+              <option>Bi-fold doors</option>
+              <option>Porch or porchway</option>
               <option>Other</option>
             </select>
 
