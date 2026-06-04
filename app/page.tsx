@@ -512,6 +512,132 @@ Address: ${house}, ${postcode}`
         </div>
       </section>
 
+      {/* RESIDENCE COLLECTION FEATURE */}
+      <section className="px-6 py-20 text-neutral-950">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-8 md:grid-cols-[0.8fr_1.2fr] md:items-end">
+            <div>
+              <Image
+                src="/residence-collection-logo.png.jpg"
+                alt="The Residence Collection"
+                width={310}
+                height={120}
+                className="mb-8 h-auto w-60 md:w-72"
+              />
+              <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-yellow-700">
+                Featured window range
+              </p>
+              <h2 className="font-serif text-4xl font-medium leading-tight md:text-5xl">
+                Explore The Residence Collection.
+              </h2>
+            </div>
+            <div className="space-y-5 text-lg leading-relaxed text-neutral-700">
+              <p>
+                Newleaf supplies and installs the full Residence Collection,
+                including Residence 2, Residence 7 and Residence 9 windows.
+              </p>
+              <p>
+                With 20+ Residence Collection installations completed across
+                Northamptonshire and nearby areas, we can help you choose the
+                right style for your home.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-10 grid gap-5 lg:grid-cols-3">
+            <a
+              href="https://www.corby-doubleglazing.co.uk/windows/upvc/residence-9-windows-corby/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative flex min-h-[390px] overflow-hidden bg-neutral-950 p-8 text-white shadow-2xl"
+            >
+              <Image
+                src="/showroom-fresh-bg.png"
+                alt=""
+                fill
+                sizes="(min-width: 1024px) 33vw, 100vw"
+                className="object-cover opacity-55 transition duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/45" />
+              <div className="relative z-10 mt-auto">
+                <div className="font-serif text-8xl leading-none text-[#8c7648]">
+                  R9
+                </div>
+                <h3 className="mt-4 font-serif text-3xl font-semibold uppercase tracking-wide">
+                  The original timber alternative
+                </h3>
+                <p className="mt-5 font-bold uppercase tracking-wide text-yellow-400">
+                  View Residence 9
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="https://www.corby-doubleglazing.co.uk/windows/upvc/residence-7-windows-corby/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative flex min-h-[390px] overflow-hidden bg-neutral-950 p-8 text-white shadow-2xl"
+            >
+              <Image
+                src="/hero.png"
+                alt=""
+                fill
+                sizes="(min-width: 1024px) 33vw, 100vw"
+                className="object-cover opacity-55 transition duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/45" />
+              <div className="relative z-10 mt-auto">
+                <div className="font-serif text-8xl leading-none text-[#f05a28]">
+                  R7
+                </div>
+                <h3 className="mt-4 font-serif text-3xl font-semibold uppercase tracking-wide">
+                  Flush, modern, versatile
+                </h3>
+                <p className="mt-5 font-bold uppercase tracking-wide text-yellow-400">
+                  View Residence 7
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="https://www.corby-doubleglazing.co.uk/windows/upvc/residence-2-windows-corby/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative flex min-h-[390px] overflow-hidden bg-neutral-950 p-8 text-white shadow-2xl"
+            >
+              <Image
+                src="/showroom-open-times-bg.png"
+                alt=""
+                fill
+                sizes="(min-width: 1024px) 33vw, 100vw"
+                className="object-cover opacity-55 transition duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/45" />
+              <div className="relative z-10 mt-auto">
+                <div className="font-serif text-8xl leading-none text-[#d9e021]">
+                  R<sup className="text-5xl">2</sup>
+                </div>
+                <h3 className="mt-4 font-serif text-3xl font-semibold uppercase tracking-wide">
+                  Technology and innovation
+                </h3>
+                <p className="mt-5 font-bold uppercase tracking-wide text-yellow-400">
+                  View Residence 2
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div className="mt-8 flex justify-center">
+            <Link
+              href="/#get-a-price"
+              className="bg-yellow-500 px-8 py-4 text-center font-bold text-black shadow-xl transition hover:bg-yellow-400"
+            >
+              Ask About The Residence Collection
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* PRODUCT GUIDES SECTION */}
       <section id="product-guides" className="relative overflow-hidden px-6 py-20 text-neutral-950">
         <div className="mx-auto max-w-6xl">
