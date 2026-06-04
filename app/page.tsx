@@ -473,25 +473,19 @@ Address: ${house}, ${postcode}`
             </div>
           </div>
 
-          <div className="relative min-h-[420px]">
-            <iframe
-              className="absolute left-1/2 top-1/2 h-full w-[178%] -translate-x-1/2 -translate-y-1/2 border-0 opacity-85"
-              src="https://www.youtube.com/embed/Vw3g7Cj1Qwo?autoplay=1&mute=1&controls=0&rel=0&modestbranding=1&playsinline=1&loop=1&playlist=Vw3g7Cj1Qwo&cc_load_policy=1&cc_lang_pref=en"
-              title="Endurance composite doors video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            />
-            <div className="absolute inset-0 bg-black/35" />
-            <div className="absolute left-8 top-8 border-l-4 border-yellow-500 pl-5">
-              <Image
-                src="/Endurance%20logo.%20png.jpg"
-                alt="Endurance Doors"
-                width={420}
-                height={150}
-                className="h-auto w-72 drop-shadow-2xl"
-              />
-              <p className="mt-2 text-sm font-bold uppercase tracking-[0.25em] text-yellow-400">
+          <div className="flex min-h-[420px] items-center bg-black p-5 md:p-8">
+            <div className="w-full">
+              <div className="aspect-video w-full overflow-hidden border border-yellow-500/30 bg-black shadow-2xl">
+                <iframe
+                  className="h-full w-full border-0"
+                  src="https://www.youtube.com/embed/Vw3g7Cj1Qwo?autoplay=1&mute=1&controls=0&rel=0&modestbranding=1&playsinline=1&loop=1&playlist=Vw3g7Cj1Qwo&cc_load_policy=1&cc_lang_pref=en"
+                  title="Endurance composite doors video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+              <p className="mt-4 border-l-4 border-yellow-500 pl-4 text-sm font-bold uppercase tracking-[0.25em] text-yellow-400">
                 Composite Doors by Newleaf
               </p>
             </div>
