@@ -2,6 +2,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import { type FormEvent, useState } from "react";
+
+const quoteConversionId = "AW-18194635837/xmXQCOO34bgcEL248OND";
+
+declare global {
+  interface Window {
+    gtag?: (
+      command: "event",
+      action: "conversion",
+      params: { send_to: string }
+    ) => void;
+  }
+}
+
 export default function Home() {
   const [quoteStatus, setQuoteStatus] = useState("");
   const productGuides = [
@@ -81,6 +94,9 @@ Address: ${house}, ${postcode}`
       const result = await response.json();
 
       if (response.ok && result.success) {
+        window.gtag?.("event", "conversion", {
+          send_to: quoteConversionId,
+        });
         form.reset();
         setQuoteStatus("Thanks, your enquiry has been sent.");
       } else {
