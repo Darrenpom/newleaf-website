@@ -461,35 +461,35 @@ Address: ${house}, ${postcode}`
           <div className="grid gap-8 md:grid-cols-[0.8fr_1.2fr] md:items-end">
             <div>
               <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-yellow-700">
-                Popular local searches
+                Areas we cover
               </p>
               <h2 className="font-serif text-4xl font-medium leading-tight md:text-5xl">
-                Local pages for windows and doors near Kettering.
+                Windows and doors across a wider local area.
               </h2>
             </div>
             <p className="text-lg leading-relaxed text-neutral-700">
-              If you are comparing options for your home, these pages explain
-              some of the most requested local services before you ask for a
-              quote.
+              Newleaf works with homeowners across Northamptonshire and nearby
+              areas, from our local showroom near Kettering to Market
+              Harborough, Leicester and surrounding towns.
             </p>
           </div>
 
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {[
               [
-                "Double Glazing Kettering",
-                "Warm, secure glazing options for local homes.",
-                "/double-glazing-kettering",
+                "Kettering",
+                "Windows and doors installed by a local team near our showroom.",
+                "/windows-and-doors-kettering",
               ],
               [
-                "Replacement Windows Kettering",
-                "Carefully fitted windows from a local team.",
-                "/replacement-windows-kettering",
+                "Market Harborough",
+                "Quality windows and doors for homes across the local area.",
+                "/windows-and-doors-market-harborough",
               ],
               [
-                "Composite Doors Kettering",
-                "Secure, stylish doors with showroom advice.",
-                "/composite-doors-kettering",
+                "Leicester",
+                "Window and door advice, supply and installation for Leicester homes.",
+                "/windows-and-doors-leicester",
               ],
             ].map(([title, description, href]) => (
               <Link
