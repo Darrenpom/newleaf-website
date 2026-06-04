@@ -435,6 +435,10 @@ Address: ${house}, ${postcode}`
             <h2 className="font-serif text-5xl font-medium leading-tight md:text-6xl">
               Endurance doors, designed with Newleaf.
             </h2>
+            <p className="mt-5 border-l-4 border-yellow-500 pl-4 text-xl font-bold uppercase leading-snug tracking-wide text-yellow-400 md:text-2xl">
+              Not all composite doors are the same. Choose a premium
+              solid-core Endurance door.
+            </p>
             <p className="mt-5 text-lg leading-relaxed text-neutral-200">
               Newleaf is a trusted Endurance installer, helping homeowners
               choose premium composite doors across Northamptonshire and nearby
