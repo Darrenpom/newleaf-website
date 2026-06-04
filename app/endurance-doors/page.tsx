@@ -12,18 +12,31 @@ export const metadata: Metadata = {
 };
 
 export default function EnduranceDoorsPage() {
+  const heroDoors = [
+    "/Endurance%20door%201.png.jpg",
+    "/Endurance%20door%202%20.png.jpg",
+    "/Endurance%20door%203%20.png.jpg",
+  ];
+
   return (
     <main className="min-h-screen bg-neutral-950 text-white">
       <section className="relative overflow-hidden px-6 py-8 md:py-10">
-        <Image
-          src="/hero.png"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover opacity-45"
-        />
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 grid grid-cols-1 md:grid-cols-3">
+          {heroDoors.map((src, index) => (
+            <div key={src} className="relative min-h-full">
+              <Image
+                src={src}
+                alt=""
+                fill
+                priority={index === 0}
+                sizes="(min-width: 768px) 33vw, 100vw"
+                className="object-cover opacity-70"
+              />
+            </div>
+          ))}
+        </div>
+        <div className="absolute inset-0 bg-black/68" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/75" />
 
         <div className="relative z-10 mx-auto max-w-6xl">
           <Link
