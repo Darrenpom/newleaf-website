@@ -359,7 +359,7 @@ Address: ${house}, ${postcode}`
               {
                 name: "Michael Haywood",
                 review:
-                  "David the owner is really helpful. We've had doors from him previously and are very happy with the quality. The windows we ordered look good and we are excited for their installation.",
+                  "David is really helpful. We've had doors from him previously and are very happy with the quality. The windows we ordered look good and we are excited for their installation.",
               },
             ].map((item) => (
               <article
