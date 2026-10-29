@@ -331,7 +331,6 @@ Address: ${house}, ${postcode}`
             />
           </div>
           </div>
-        </div>
       </section>
       {/* TRUST STRIP */}
       <section className="border-b border-yellow-700/20 px-6 py-8 text-neutral-950">
