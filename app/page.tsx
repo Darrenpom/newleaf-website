@@ -174,7 +174,14 @@ Address: ${house}, ${postcode}`
             >
               <span className="text-white font-semibold">Facebook</span>
             </a>
-
+<a
+  href="https://www.instagram.com/nlwdltd/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 px-4 py-2 shadow-lg transition hover:opacity-90"
+>
+  <span className="font-semibold text-white">Instagram</span>
+</a>
             <a
               href="mailto:info@nlwd.co.uk"
               className="hover:text-yellow-400 transition"
@@ -220,9 +227,16 @@ Address: ${house}, ${postcode}`
           <a href="/showroom-open-times" className="shrink-0 hover:text-yellow-400">
             Open Times
           </a>
-          <Link href="/endurance-doors" className="shrink-0 hover:text-yellow-400">
             Endurance
           </Link>
+          <a
+  href="https://www.instagram.com/nlwdltd/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="shrink-0 hover:text-yellow-400"
+>
+  Instagram
+</a>
           <a href="mailto:info@nlwd.co.uk" className="shrink-0 hover:text-yellow-400">
             Contact
           </a>
