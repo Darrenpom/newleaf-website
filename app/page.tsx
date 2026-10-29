@@ -145,7 +145,9 @@ Address: ${house}, ${postcode}`
             <Link href="/#product-guides" className="hover:text-yellow-400 transition">
               Products & Brochures
             </Link>
-
+<Link href="/blog" className="hover:text-yellow-400 transition">
+  Blog
+</Link>
             <a
               href="/showroom"
               className="hover:text-yellow-400 transition"
