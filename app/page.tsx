@@ -210,40 +210,41 @@ Address: ${house}, ${postcode}`
 
         </div>
 
-        {/* MOBILE ALWAYS-VISIBLE LINKS */}
-        <nav className="md:hidden flex gap-4 overflow-x-auto border-t border-yellow-500/20 bg-black px-4 py-3 text-sm font-medium text-white">
-          <Link href="/" className="shrink-0 hover:text-yellow-400">
-            Home
-          </Link>
-          <a href="/gallery" className="shrink-0 hover:text-yellow-400">
-            Gallery
-          </a>
-          <Link href="/#product-guides" className="shrink-0 hover:text-yellow-400">
-            Products
-          </Link>
-          <a href="/showroom" className="shrink-0 hover:text-yellow-400">
-            Showroom
-          </a>
-          <a href="/showroom-open-times" className="shrink-0 hover:text-yellow-400">
-            Open Times
-          </a>
-            Endurance
-          </Link>
-          <a
-  href="https://www.instagram.com/nlwdltd/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="shrink-0 hover:text-yellow-400"
->
-  Instagram
-</a>
-          <a href="mailto:info@nlwd.co.uk" className="shrink-0 hover:text-yellow-400">
-            Contact
-          </a>
-          <a href="tel:01536647649" className="shrink-0 text-yellow-400 hover:text-yellow-300">
-            Call
-          </a>
-        </nav>
+       {/* MOBILE ALWAYS-VISIBLE LINKS */}
+<nav className="md:hidden flex gap-4 overflow-x-auto border-t border-yellow-500/20 bg-black px-4 py-3 text-sm font-medium text-white">
+  <Link href="/" className="shrink-0 hover:text-yellow-400">
+    Home
+  </Link>
+  <a href="/gallery" className="shrink-0 hover:text-yellow-400">
+    Gallery
+  </a>
+  <Link href="/#product-guides" className="shrink-0 hover:text-yellow-400">
+    Products
+  </Link>
+  <a href="/showroom" className="shrink-0 hover:text-yellow-400">
+    Showroom
+  </a>
+  <a href="/showroom-open-times" className="shrink-0 hover:text-yellow-400">
+    Open Times
+  </a>
+  <Link href="/endurance-doors" className="shrink-0 hover:text-yellow-400">
+    Endurance
+  </Link>
+  <a
+    href="https://www.instagram.com/nlwdltd/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="shrink-0 hover:text-yellow-400"
+  >
+    Instagram
+  </a>
+  <a href="mailto:info@nlwd.co.uk" className="shrink-0 hover:text-yellow-400">
+    Contact
+  </a>
+  <a href="tel:01536647649" className="shrink-0 text-yellow-400 hover:text-yellow-300">
+    Call
+  </a>
+</nav>
       </header>
 
       {/* HERO SECTION */}
