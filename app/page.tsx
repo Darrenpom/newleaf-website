@@ -951,35 +951,21 @@ Address: ${house}, ${postcode}`
         </div>
       </section>
 
-      {/* MAP SECTION */}
+            {/* CONTACT SECTION */}
       <section className="border-t border-yellow-500/25 px-6 py-16">
-        <div className="max-w-5xl mx-auto text-center">
-
-          <h2 className="text-3xl md:text-4xl font-bold text-yellow-500 mb-4">
-            Find Our Showroom
+        <div className="mx-auto max-w-5xl text-center">
+          <h2 className="mb-4 text-3xl font-bold text-yellow-500 md:text-4xl">
+            Contact Newleaf
           </h2>
-
-          <p className="text-neutral-950 text-lg mb-8">
-            5 Pipewell Industrial Estate, Kettering, NN14 2SW
+          <p className="mb-8 text-lg text-neutral-950">
+            Get in touch to discuss your windows and doors project or arrange a visit.
           </p>
-
           <a
-            href="https://www.google.com/maps/search/?api=1&query=5+Pipewell+Industrial+Estate,+Kettering,+NN14+2SW"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-8 py-4 rounded-2xl transition shadow-2xl text-lg mb-8"
+            href="tel:01536647649"
+            className="inline-flex items-center rounded-2xl bg-yellow-500 px-8 py-4 text-lg font-bold text-black shadow-2xl transition hover:bg-yellow-400"
           >
-            Click For Directions To Our Showroom
+            Call 01536 647649
           </a>
-
-          <div className="rounded-2xl overflow-hidden border border-yellow-500/30 shadow-2xl">
-            <img
-              src="/map.png"
-              alt="Map to Newleaf Windows showroom"
-              className="w-full h-auto"
-            />
-          </div>
-
         </div>
       </section>
 

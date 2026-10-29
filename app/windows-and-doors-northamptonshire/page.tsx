@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Windows and Doors in Northamptonshire | Newleaf",
     description:
-      "Visit our local showroom near Kettering for windows and doors installed across Northamptonshire.",
+      "Windows and doors supplied and installed across Northamptonshire.",
     images: ["/hero.png"],
   },
 };
@@ -37,13 +37,6 @@ const localBusinessSchema = {
   image: "/logo.png",
   telephone: "01536 647649",
   email: "info@nlwd.co.uk",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "5 Pipewell Industrial Estate",
-    addressLocality: "Kettering",
-    postalCode: "NN14 2SW",
-    addressCountry: "GB",
-  },
   areaServed: serviceAreas.map((area) => ({
     "@type": "Place",
     name: area,
@@ -99,7 +92,7 @@ export default function NorthamptonshireWindowsAndDoorsPage() {
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-200 md:text-xl">
                 Newleaf helps homeowners upgrade their homes with secure,
                 energy-efficient windows and doors, supplied and installed by a
-                local team you can visit at our showroom near Kettering.
+                local team serving Northamptonshire.
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -161,10 +154,9 @@ export default function NorthamptonshireWindowsAndDoorsPage() {
             </p>
 
             <p>
-              Our showroom near Kettering gives you a place to compare designs,
-              finishes, glazing options and hardware before you decide. We keep
-              the process straightforward, with clear advice and tidy
-              installation from start to finish.
+              We can talk through designs, finishes, glazing options and
+              hardware before you decide. We keep the process straightforward,
+              with clear advice and tidy installation from start to finish.
             </p>
 
             <p>
@@ -216,12 +208,11 @@ export default function NorthamptonshireWindowsAndDoorsPage() {
       <section className="bg-neutral-950 px-6 py-16 text-center">
         <div className="mx-auto max-w-3xl">
           <h2 className="font-serif text-4xl font-medium md:text-5xl">
-            Visit the showroom or ask for a local quote.
+            Ask for a local quote.
           </h2>
 
           <p className="mt-5 text-lg leading-relaxed text-neutral-300">
-            Find us at 5 Pipewell Industrial Estate, Kettering, NN14 2SW, or
-            contact the team to talk through your window and door project.
+            Contact the team to talk through your window and door project.
           </p>
 
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
@@ -229,7 +220,7 @@ export default function NorthamptonshireWindowsAndDoorsPage() {
               href="/showroom"
               className="bg-yellow-500 px-8 py-4 font-bold text-black transition hover:bg-yellow-400"
             >
-              Visit Our Showroom
+              View Our Showroom Video
             </Link>
 
             <Link
