@@ -320,15 +320,16 @@ Address: ${house}, ${postcode}`
           <h2 className="mb-6 text-center font-serif text-3xl font-medium md:text-4xl">
             See our windows and doors in action
           </h2>
-          <div className="aspect-video overflow-hidden rounded-2xl border border-yellow-700/25 bg-black shadow-2xl">
+                    <div className="aspect-video overflow-hidden rounded-2xl border border-yellow-700/25 bg-black shadow-2xl">
             <iframe
               className="h-full w-full border-0"
-              src="https://www.youtube.com/embed/XtDHil3kA_w?rel=0&modestbranding=1&playsinline=1"
+              src="https://www.youtube.com/embed/XtDHil3kA_w?autoplay=1&mute=1&rel=0&modestbranding=1&playsinline=1"
               title="Newleaf Windows and Doors video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             />
+          </div>
           </div>
         </div>
       </section>
