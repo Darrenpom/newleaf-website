@@ -200,7 +200,7 @@ Address: ${house}, ${postcode}`
             </a>
 
             <a
-              href="mailto:info@newleafwindows.com"
+              href="mailto:info@nlwd.co.uk"
               className="hover:text-yellow-400 transition"
             >
               Contact
@@ -247,10 +247,10 @@ Address: ${house}, ${postcode}`
           <Link href="/endurance-doors" className="shrink-0 hover:text-yellow-400">
             Endurance
           </Link>
-          <a href="mailto:info@newleafwindows.com" className="shrink-0 hover:text-yellow-400">
+          <a href="mailto:info@nlwd.co.uk" className="shrink-0 hover:text-yellow-400">
             Contact
           </a>
-          <a href="tel:01536601292" className="shrink-0 text-yellow-400 hover:text-yellow-300">
+          <a href="tel:01536647649" className="shrink-0 text-yellow-400 hover:text-yellow-300">
             Call
           </a>
         </nav>
@@ -284,7 +284,7 @@ Address: ${house}, ${postcode}`
           <div className="flex flex-col md:flex-row gap-6 md:gap-8 -mt-8 mb-10 w-full max-w-5xl justify-center">
 
             <a
-              href="tel:01536601292"
+              href="tel:01536647649"
               className="group flex items-center justify-center gap-5 w-full md:w-[430px] border-2 border-yellow-500/90 bg-black/25 backdrop-blur-sm text-white px-6 md:px-10 py-5 md:py-6 rounded-2xl hover:bg-yellow-500/20 transition shadow-2xl"
             >
               <span className="text-xl md:text-2xl font-medium tracking-wide">
@@ -293,7 +293,7 @@ Address: ${house}, ${postcode}`
             </a>
 
             <a
-              href="mailto:info@newleafwindows.com"
+              href="mailto:info@nlwd.co.uk"
               className="group flex items-center justify-center gap-5 w-full md:w-[430px] border-2 border-yellow-500/90 bg-black/25 backdrop-blur-sm text-white px-6 md:px-10 py-5 md:py-6 rounded-2xl hover:bg-yellow-500/20 transition shadow-2xl"
             >
               <span className="text-xl md:text-2xl font-medium tracking-wide">

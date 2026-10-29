@@ -71,10 +71,10 @@ export default function EnduranceDoorsPage() {
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a
-                  href="tel:01536601292"
+                  href="tel:01536647649"
                   className="bg-yellow-500 px-8 py-4 text-center text-lg font-bold text-black transition hover:bg-yellow-400"
                 >
-                  Call 01536 601292
+                  Call 01536 647649
                 </a>
                 <Link
                   href="/#get-a-price"
