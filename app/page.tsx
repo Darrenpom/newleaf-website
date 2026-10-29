@@ -113,33 +113,7 @@ Address: ${house}, ${postcode}`
 
   return (
     <main className="min-h-screen bg-black text-white">
-      <a
-        href="#residence-collection"
-        className="fixed right-6 top-[38%] z-40 hidden w-[38rem] -translate-y-1/2 text-center text-white transition hover:-translate-y-[52%] xl:block"
-        aria-label="View The Residence Collection"
-      >
-        <Image
-          src="/residence-collection-logo.png.jpg"
-          alt="The Residence Collection"
-          width={780}
-          height={300}
-          className="h-auto w-full"
-        />
-        <span className="mt-4 block font-serif text-[1.7rem] font-semibold uppercase tracking-[0.32em] text-white [text-shadow:_0_2px_8px_rgb(0_0_0_/_65%)]">
-          View Ranges
-        </span>
-      </a>
 
-      <div className="fixed bottom-6 right-6 z-40 hidden aspect-video w-[38rem] overflow-hidden shadow-2xl xl:block">
-        <iframe
-          className="h-full w-full"
-          src="https://www.youtube.com/embed/XtDHil3kA_w?autoplay=1&mute=1&controls=0&rel=0&modestbranding=1&playsinline=1&loop=1&playlist=XtDHil3kA_w"
-          title="Newleaf Residence Collection video"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        />
-      </div>
 
       {/* STICKY HEADER */}
       <header className="sticky top-0 z-50">
@@ -341,6 +315,23 @@ Address: ${house}, ${postcode}`
       <div className="absolute inset-0 bg-white/58"></div>
       <div className="absolute inset-0 bg-gradient-to-b from-white/68 via-white/42 to-white/64"></div>
       <div className="relative z-10">
+            <section className="px-6 py-12 text-neutral-950">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="mb-6 text-center font-serif text-3xl font-medium md:text-4xl">
+            See our windows and doors in action
+          </h2>
+          <div className="aspect-video overflow-hidden rounded-2xl border border-yellow-700/25 bg-black shadow-2xl">
+            <iframe
+              className="h-full w-full border-0"
+              src="https://www.youtube.com/embed/XtDHil3kA_w?rel=0&modestbranding=1&playsinline=1"
+              title="Newleaf Windows and Doors video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </section>
       {/* TRUST STRIP */}
       <section className="border-b border-yellow-700/20 px-6 py-8 text-neutral-950">
         <div className="mx-auto grid max-w-6xl gap-4 text-center sm:grid-cols-2 lg:grid-cols-4">
