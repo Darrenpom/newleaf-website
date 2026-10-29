@@ -165,7 +165,7 @@ Address: ${house}, ${postcode}`
             </Link>
 
             <a
-              href="https://www.facebook.com/newleafwindowsanddoors"
+              href="https://www.facebook.com/profile.php?id=61592503757048"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-full transition shadow-lg"
